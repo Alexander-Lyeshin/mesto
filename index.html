@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/index.css">
+    <title>Mesto</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <img src="images/header/logo/logo.svg" class="header__logo" alt="Логотип сайта 'Место'">
+        </header>
+        <main class="content">
+            <section class="profile">
+                <div class="profile__avatar">
+                    <img class="profile__avatar-image" src="images/profile/Avatar.jpg"
+                        alt="Здесь находится аватар вашего профиля">
+                </div>
+                <div class="profile__info">
+                    <p class="profile__user-name">Жак-Ив Кусто</p>
+                    <button id="open__popup" class="profile__edit-button link">
+                        <img src="images/profile/edit-button.svg" alt="">
+                    </button>
+                    <p class="profile__user-description">Исследователь океана</p>
+                </div>
+                <div class="profile__add-button link"></div>
+            </section>
+
+            <section class="elements">
+                <div class="card">
+                    <img class="card__image" src="images/card/Nusa-Penida.jpeg" alt="">
+                    <h2 class="card__title">Нуса-Пенида</h2>
+                    <button class="card__like-button link"></button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/card/Freedom-Beach.JPG" alt="">
+                    <h2 class="card__title">Freedom Beach</h2>
+                    <button class="card__like-button link"></button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/card/Tahtal.JPG" alt="">
+                    <h2 class="card__title">Тахталы Турция</h2>
+                    <button class="card__like-button link"></button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/card/Ozerna.JPG" alt="">
+                    <h2 class="card__title">Осень</h2>
+                    <button class="card__like-button link"></button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/card/Odincovo.JPG" alt="">
+                    <h2 class="card__title">Одинцово</h2>
+                    <button class="card__like-button link"></button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/card/Moscow.JPG" alt="">
+                    <h2 class="card__title">Москва</h2>
+                    <button class="card__like-button link"></button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">© 2020 Mesto Russia</p>
+        </footer>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup__container">
+            <div class="popup__body" id="popup__body">
+                <form class="popup__form" action="#">
+                    <h3 class="popup__title">Редактировать профиль</h3>
+                    <input class="popup__input-username" type="text">
+                    <input class="popup__input-job" type="text">
+                    <button class="popup__save-button link">Сохранить</button>
+                </form>
+                <div class="popup__close link">
+                    <img id="close__popup" src="images/popup/popup-close.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="blocks/script/index.js"></script>
+</body>
+
+</html>
