@@ -16,50 +16,46 @@
         </header>
         <main class="content">
             <section class="profile">
-                <div class="profile__avatar">
-                    <img class="profile__avatar-image" src="images/profile/Avatar.jpg"
-                        alt="Здесь находится аватар вашего профиля">
-                </div>
+                <img class="profile__avatar-image" src="images/profile/Avatar.jpg"
+                    alt="Здесь находится аватар вашего профиля">
                 <div class="profile__info">
-                    <p class="profile__user-name">Жак-Ив Кусто</p>
-                    <button id="open__popup" class="profile__edit-button link">
-                        <img src="images/profile/edit-button.svg" alt="здесь конопка для добавления профиля">
-                    </button>
+                    <h1 class="profile__user-name">Жак-Ив Кусто</h1>
+                    <button type="button" id="open__popup" class="profile__edit-button link"></button>
                     <p class="profile__user-description">Исследователь океана</p>
                 </div>
-                <div class="profile__add-button link"></div>
+                <button type="button" class="profile__add-button link"></button>
             </section>
 
             <section class="elements">
                 <div class="card">
                     <img class="card__image" src="images/card/Nusa-Penida.jpeg" alt="Остров Нуса-Пенида">
                     <h2 class="card__title">Нуса-Пенида</h2>
-                    <button class="card__like-button link"></button>
+                    <button type="button" class="card__like-button link"></button>
                 </div>
                 <div class="card">
                     <img class="card__image" src="images/card/Freedom-Beach.JPG" alt="Пляж Фридом">
                     <h2 class="card__title">Freedom Beach</h2>
-                    <button class="card__like-button link"></button>
+                    <button type="button" class="card__like-button link"></button>
                 </div>
                 <div class="card">
                     <img class="card__image" src="images/card/Tahtal.JPG" alt="Гора тахталы Турция">
                     <h2 class="card__title">Тахталы Турция</h2>
-                    <button class="card__like-button link"></button>
+                    <button type="button" class="card__like-button link"></button>
                 </div>
                 <div class="card">
                     <img class="card__image" src="images/card/Ozerna.JPG" alt="Осень на Озернинском водохранилище">
                     <h2 class="card__title">Осень</h2>
-                    <button class="card__like-button link"></button>
+                    <button type="button" class="card__like-button link"></button>
                 </div>
                 <div class="card">
                     <img class="card__image" src="images/card/Odincovo.JPG" alt="Одинцово на закате">
                     <h2 class="card__title">Одинцово</h2>
-                    <button class="card__like-button link"></button>
+                    <button type="button" class="card__like-button link"></button>
                 </div>
                 <div class="card">
                     <img class="card__image" src="images/card/Moscow.JPG" alt="Москва Кремлевская набережная">
                     <h2 class="card__title">Москва</h2>
-                    <button class="card__like-button link"></button>
+                    <button type="button" class="card__like-button link"></button>
                 </div>
             </section>
         </main>
@@ -68,22 +64,19 @@
         </footer>
     </div>
     <div class="popup" id="popup">
-        <div class="popup__container">
-            <div class="popup__body" id="popup__body">
-                <form class="popup__form" action="#">
+        <div class="popup__body" id="popup__body">
+            <form name="editing-profile" class="popup__form" action="#">
+                <div class="popup__content">
                     <h3 class="popup__title">Редактировать профиль</h3>
-                    <input class="popup__input-username" type="text">
-                    <input class="popup__input-job" type="text">
-                    <button class="popup__save-button link">Сохранить</button>
-                </form>
-                <div class="popup__close link">
-                    <img id="close__popup" src="images/popup/popup-close.svg"
-                        alt="изображения крестика для закрытия модального окна">
+                    <input placeholder="Имя" name="username" class="popup__input popup__input_username" type="text">
+                    <input placeholder="О себе" name="input-job" class="popup__input popup__input_job" type="text">
+                    <button type="submit" class="popup__save-button link">Сохранить</button>
                 </div>
-            </div>
+            </form>
+            <button type="button" class="popup__close link"></button>
         </div>
     </div>
-    <script src="blocks/script/index.js"></script>
+    <script src="script/index.js"></script>
 </body>
 
 </html>

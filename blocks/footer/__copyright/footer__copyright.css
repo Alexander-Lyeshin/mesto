@@ -2,9 +2,15 @@
   color: #545454;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}
+
+@media screen and (max-width:647px) {
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
