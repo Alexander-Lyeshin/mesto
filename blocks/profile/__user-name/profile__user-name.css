@@ -16,5 +16,6 @@
     .profile__user-name {
         font-size: 27px;
         line-height: 1.22;
+        max-width: 220px;
     }
 }
