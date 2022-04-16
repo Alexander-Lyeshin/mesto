@@ -13,6 +13,11 @@
     border-radius: 2px;
     cursor: pointer;
     border: none;
+    transition-duration: 1s;
+}
+
+.popup__save-button:hover {
+    opacity: 80%;
 }
 
 @media screen and (max-width:647px) {

@@ -10,6 +10,11 @@
     background-position: center;
     cursor: pointer;
     background-color: black;
+    transition-duration: 1s;
+}
+
+.profile__add-button:hover {
+    opacity: 60%;
 }
 
 @media screen and (max-width:665px) {

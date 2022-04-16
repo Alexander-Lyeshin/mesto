@@ -9,6 +9,11 @@
     background-repeat: no-repeat;
     background-color: black;
     border: none;
+    transition-duration: 1s;
+}
+
+.popup__close:hover {
+    opacity: 60%;
 }
 
 @media screen and (max-width:647px) {
