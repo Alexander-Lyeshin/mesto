@@ -20,5 +20,6 @@
     .popup__close {
         background-size: 20px 20px;
         right: -12px;
+        top: -36px;
     }
 }
