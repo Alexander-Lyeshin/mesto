@@ -1,0 +1,13 @@
+.popup__fullscreen-close {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../../images/popup/popup-close.svg);
+    background-repeat: no-repeat;
+    background-color: black;
+    border: none;
+    transition-duration: 1s;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}

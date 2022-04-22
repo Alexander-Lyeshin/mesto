@@ -10,6 +10,7 @@
     background-color: black;
     border: none;
     transition-duration: 1s;
+    background-color: transparent;
 }
 
 .popup__close:hover {
