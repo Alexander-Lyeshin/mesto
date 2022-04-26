@@ -9,30 +9,31 @@
     <title>Mesto</title>
 </head>
 
-<body>
-    <div class="page">
-        <header class="header">
-            <img src="images/header/logo/logo.svg" class="header__logo" alt="Логотип сайта 'Место'">
-        </header>
-        <main class="content">
-            <section class="profile">
-                <img class="profile__avatar-image" src="images/profile/Avatar.jpg"
-                    alt="Здесь находится аватар вашего профиля">
-                <div class="profile__info">
-                    <h1 class="profile__user-name">Жак-Ив Кусто</h1>
-                    <button type="button" class="profile__edit-button"></button>
-                    <p class="profile__user-description">Исследователь океана</p>
-                </div>
-                <button type="button" class="profile__add-button"></button>
-            </section>
+<body class="body">
 
-            <section class="elements"></section>
+    <header class="header">
+        <img src="images/header/logo/logo.svg" class="header__logo" alt="Логотип сайта 'Место'">
+    </header>
 
-        </main>
-        <footer class="footer">
-            <p class="footer__copyright">© 2020 Mesto Russia</p>
-        </footer>
-    </div>
+    <main class="content">
+        <section class="profile">
+            <img class="profile__avatar-image" src="images/profile/Avatar.jpg"
+                alt="Здесь находится аватар вашего профиля">
+            <div class="profile__info">
+                <h1 class="profile__user-name">Жак-Ив Кусто</h1>
+                <button type="button" class="profile__edit-button"></button>
+                <p class="profile__user-description">Исследователь океана</p>
+            </div>
+            <button type="button" class="profile__add-button"></button>
+        </section>
+
+        <section class="elements"></section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+
 
     <div class="popup" id="popup">
         <div class="popup__body" id="popup__body">
@@ -46,7 +47,7 @@
         </div>
     </div>
 
-    <div class="popup popup_add_image">
+    <div class="popup popup_add-image">
         <div class="popup__body">
             <form name="editing-profile" class="popup__form popup__form-add-image" action="#">
                 <h3 class="popup__title">Новое место</h3>
@@ -59,7 +60,7 @@
         </div>
     </div>
 
-    <div class="popup popup_fullscreen_image">
+    <div class="popup popup_fullscreen-image">
         <div class="popup__fullscreen-container">
             <button type="button" class="popup__fullscreen-close"></button>
             <img class="popup__big-picture" src="#" alt="Увеличенное изображение карточки">
@@ -78,8 +79,9 @@
         </div>
     </template>
 
+    <script src="script/constants.js"></script>
     <script src="script/index.js"></script>
-
+    
 </body>
 
 </html>
